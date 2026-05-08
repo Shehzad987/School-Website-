@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Flower's School | Dera Ghazi Khan</title>
+<meta name="description"
+
+content="The Flower's School in Dera Ghazi Khan providing quality education with modern learning and strong values.">
+<meta property="og:title" content="The Flower's School | Dera Ghazi Khan">
+<meta property="og:description" content="Empowering young minds for a bright future. Learn, bloom, and achieve at The Flower's School.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="#">
+<meta property="og:image" content="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Flower's School | Dera Ghazi Khan">
+<meta name="twitter:description" content="Empowering young minds for a bright future. Learn, bloom, and achieve at The Flower's School.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+
+    --bg:#f7f8fc;
+
+    --surface:rgba(255,255,255,0.78);
+
+    --primary:#0f2a4b;       /* Navy Blue */
+
+    --primary-light:#1f4c8f;
+
+    --pink:#ff4f8b;
+    --pink-light:#ff85ad;
+
+    --red:#e63946;
+
+    --text:#0b1220;
+    --muted:#5b677a;
+
+    --border:rgba(255,255,255,0.22);
+
+    --shadow:
+    0 14px 40px rgba(15,42,75,0.10),
+    0 28px 70px rgba(15,42,75,0.08);
+
+    --radius:28px;
+
+    --focus: rgba(255,79,139,0.35);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,79,139,0.10),
+    transparent 25%),
+
+    radial-gradient(circle at bottom right,
+    rgba(19,41,75,0.10),
+    transparent 25%),
+
+    var(--bg);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#edf0f6;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+    to bottom,
+    var(--pink),
+    var(--primary)
+    );
+
+    border-radius:999px;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Header */
+
+.nav-logo{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    box-shadow:0 10px 30px rgba(19,41,75,0.18);
+
+}
+
+.header{
+
+    position:fixed;
+
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,0.68);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 10px 30px rgba(19,41,75,0.06);
+}
+
+.nav-container{
+
+    gap:16px;
+
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:18px 24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+
+    font-size:1.3rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    letter-spacing:-0.03em;
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:28px;
+}
+
+.nav-link{
+
+    position:relative;
+
+    font-weight:500;
+
+    color:var(--muted);
+
+    transition:0.3s;
+}
+
+.nav-link:hover{
+
+    color:var(--pink);
+}
+
+.nav-link::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+    height:2px;
+
+    background:var(--pink);
+
+    transition:0.3s;
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:150px 24px 80px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(19,41,75,0.88),
+    rgba(230,57,70,0.75)
+    ),
+
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+}
+
+.hero::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 20% 20%,
+    rgba(255,255,255,0.08),
+    transparent 20%),
+
+    radial-gradient(circle at 80% 80%,
+    rgba(255,255,255,0.05),
+    transparent 20%);
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    animation:fadeUp 1s ease;
+}
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,0.12);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(10px);
+
+    color:#fff;
+
+    margin-bottom:28px;
+
+    font-weight:600;
+}
+
+.hero h1{
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    line-height:1.05;
+
+    margin-bottom:24px;
+
+    font-weight:800;
+
+    letter-spacing:-0.04em;
+}
+
+.hero p{
+
+    max-width:720px;
+
+    margin:auto auto 40px;
+
+    color:rgba(255,255,255,0.86);
+
+    font-size:1.05rem;
+}
+
+/* Global polish */
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus */
+
+a:focus-visible,
+.button:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0 4px var(--focus);
+    border-radius: 14px;
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 32px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:0.35s ease;
+}
+
+.button-primary{
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--pink),
+    var(--red)
+    );
+
+    color:white;
+
+    box-shadow:0 18px 40px rgba(230,57,70,0.30);
+}
+
+.button-secondary{
+
+    border:2px solid rgba(255,255,255,0.6);
+
+    color:white;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+.button:hover{
+
+    transform:translateY(-5px) scale(1.02);
+}
+
+/* Sections */
+
+.section{
+
+    padding:110px 24px;
+}
+
+.section-inner{
+
+    max-width:1180px;
+
+    margin:auto;
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.section-title h2{
+
+    font-size:clamp(2rem,4vw,3.3rem);
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+}
+
+.section-title p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:var(--muted);
+}
+
+/* Cards */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:28px;
+}
+
+.card{
+
+    background:var(--surface);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.22);
+
+    border-radius:var(--radius);
+
+    padding:34px;
+
+    box-shadow:var(--shadow);
+
+    transition:0.4s ease;
+
+    animation:fadeUp 1s ease;
+}
+
+.card{
+
+    position:relative;
+}
+
+.card::before{
+
+    content:'';
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:inherit;
+
+    background:linear-gradient(135deg, rgba(255,79,139,0.20), rgba(19,41,75,0.12));
+
+    opacity:0;
+
+    transition:opacity 0.35s ease;
+
+    pointer-events:none;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 80px rgba(15,42,75,0.16);
+}
+
+.card:hover::before{ opacity:1; }
+
+
+.card-icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:22px;
+
+    font-size:1.5rem;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--pink),
+    var(--red)
+    );
+}
+
+.card h3{
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+}
+
+.card p{
+
+    color:var(--muted);
+}
+
+/* About Banner */
+
+.about-banner{
+
+    margin-top:70px;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-light)
+    );
+    color:white;
+    border-radius:36px;
+    padding:60px;
+    text-align:center;
+    box-shadow:0 30px 70px rgba(19,41,75,0.16);
+}
+
+.about-banner h2{
+
+    margin-bottom:20px;
+
+    font-size:clamp(2rem,4vw,3rem);
+}
+
+.about-banner p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,0.85);
+}
+
+/* Contact */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:28px;
+}
+
+.contact-card{
+
+    background:var(--surface);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:var(--radius);
+
+    padding:34px;
+
+    box-shadow:var(--shadow);
+
+    transition:0.35s;
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.contact-card h3{
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+}
+
+.contact-card p{
+
+    color:var(--muted);
+
+    margin-bottom:12px;
+}
+
+/* Highlights / Stats */
+
+.highlights{
+
+    padding:0 24px 110px;
+}
+
+.highlights-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.highlights-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+}
+
+.stat{
+    position:relative;
+    border-radius:24px;
+    padding:26px;
+    background:rgba(255,255,255,0.55);
+    border:1px solid rgba(255,255,255,0.34);
+    box-shadow:0 20px 60px rgba(15,42,75,0.10);
+    backdrop-filter:blur(16px);
+    overflow:hidden;
+    transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.stat::before{
+    content:'';
+    position:absolute;
+    inset:-2px;
+    background:linear-gradient(135deg, rgba(255,79,139,0.20), rgba(19,41,75,0.12));
+    opacity:0;
+    transition:opacity 0.35s ease;
+}
+
+.stat:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 80px rgba(15,42,75,0.16);
+}
+
+.stat:hover::before{ opacity:1; }
+
+.stat > *{ position:relative; z-index:2; }
+
+.stat-value{
+    font-size:2.1rem;
+    font-weight:850;
+    color:var(--primary);
+    letter-spacing:-0.02em;
+    margin-bottom:8px;
+}
+
+.stat-label{
+    color:var(--muted);
+    font-weight:600;
+    line-height:1.4;
+}
+
+.stat-sub{
+    margin-top:10px;
+    color:rgba(17,24,39,0.70);
+    font-size:0.96rem;
+}
+
+/* Footer */
+
+.footer{
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(15,42,75,0.96),
+    rgba(31,76,143,0.92)
+    );
+
+    padding:44px 20px;
+
+    color:rgba(255,255,255,0.86);
+
+    margin-top:-20px;
+
+    box-shadow:0 -20px 60px rgba(15,42,75,0.12);
+}
+
+.footer::before{
+    content:'';
+    display:block;
+    height:1px;
+    width:min(900px, 92%);
+    margin:0 auto 26px;
+    background:linear-gradient(90deg, transparent, rgba(255,79,139,0.65), transparent);
+}
+
+.footer b{ color:white; }
+
+.footer-inner{
+    max-width:1180px;
+    margin:auto;
+    text-align:center;
+}
+
+
+
+/* Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* Mobile */
+
+html{
+    scroll-padding-top:88px;
+}
+
+@media(max-width:768px){
+
+
+    .nav-menu{
+        display:none;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .button{
+        width:100%;
+    }
+
+    .about-banner{
+        padding:40px 24px;
+    }
+
+    .section{
+        padding:80px 20px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="nav-container">
+
+<a href="#home" class="brand" style="display:flex;align-items:center;gap:12px;">
+<img src="profile logo.jpg" alt="The Flower's School" class="nav-logo">
+<span>The Flower's School</span>
+</a>
+
+
+<nav>
+
+<ul class="nav-menu">
+
+<li><a href="#home" class="nav-link">Home</a></li>
+
+<li><a href="#about" class="nav-link">About</a></li>
+
+<li><a href="#academics" class="nav-link">Academics</a></li>
+
+<li><a href="#admissions" class="nav-link">Admissions</a></li>
+
+<li><a href="#faculty" class="nav-link">Faculty</a></li>
+
+<li><a href="#contact" class="nav-link">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+✨ Learn • Bloom • Achieve
+</div>
+
+<h1>
+Empowering Young Minds For A Bright Future
+</h1>
+
+<p>
+The Flower's School is dedicated to providing quality education, modern learning experiences and strong moral values in a caring and inspiring environment.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#admissions" class="button button-primary">
+Apply Now
+</a>
+
+<a href="#academics" class="button button-secondary">
+Explore School
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="section" id="about">
+
+<div class="section-inner">
+
+<div class="section-title">
+
+<h2>
+Why Parents Choose Us
+</h2>
+
+<p>
+A modern educational environment focused on academic excellence, creativity and personal growth for every child.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-icon">
+🎓
+</div>
+
+<h3>
+Quality Education
+</h3>
+
+<p>
+Strong academic programs designed to help students achieve excellence and confidence.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🌟
+</div>
+
+<h3>
+Creative Learning
+</h3>
+
+<p>
+Interactive classrooms and innovative teaching methods that inspire curiosity and growth.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+❤️
+</div>
+
+<h3>
+Caring Environment
+</h3>
+
+<p>
+A safe and supportive atmosphere where students feel valued, respected and motivated.
+</p>
+
+</div>
+
+</div>
+
+<div class="about-banner">
+
+<h2>
+About The Flower's School
+</h2>
+
+<p>
+The Flower's School is committed to shaping future leaders through modern education, discipline and character building. Our mission is to nurture young learners with knowledge, confidence and values that prepare them for success in every stage of life.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACADEMICS -->
+
+<section class="section" id="academics">
+
+<div class="section-inner">
+
+<div class="section-title">
+
+<h2>
+Our Academic Programs
+</h2>
+
+<p>
+Focused on building strong foundations through balanced academics, creativity and modern learning approaches.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-icon">
+📚
+</div>
+
+<h3>
+Primary Education
+</h3>
+
+<p>
+Building strong fundamentals in language, mathematics, science and social learning.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+💻
+</div>
+
+<h3>
+Modern Learning
+</h3>
+
+<p>
+Technology-enhanced education that prepares students for the future world.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🏆
+</div>
+
+<h3>
+Student Development
+</h3>
+
+<p>
+Encouraging confidence, leadership and communication skills beyond academics.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ADMISSIONS -->
+
+<section class="section" id="admissions">
+
+<div class="section-inner">
+
+<div class="section-title">
+
+<h2>
+Admissions
+</h2>
+
+<p>
+Ready to join The Flower's School? Learn about our admission process and important dates.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-icon">
+📝
+</div>
+
+<h3>
+Apply Online
+</h3>
+
+<p>
+Fill the admission form and submit the required details to get started.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+📅
+</div>
+
+<h3>
+Admission Schedule
+</h3>
+
+<p>
+Admissions are open during the annual enrollment window. Contact us for the latest dates.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🤝
+</div>
+
+<h3>
+Campus Visit & Support
+</h3>
+
+<p>
+We welcome parents to visit the campus and ask any questions about our programs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FACULTY -->
+
+<section class="section" id="faculty">
+
+<div class="section-inner">
+
+<div class="section-title">
+
+<h2>
+Faculty & Staff
+</h2>
+
+<p>
+Dedicated educators who guide students with care, discipline and a passion for teaching.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="card-icon">
+🎯
+</div>
+
+<h3>
+Experienced Teachers
+</h3>
+
+<p>
+Our faculty focuses on strong fundamentals, clarity of concepts and student engagement.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🧠
+</div>
+
+<h3>
+Personalized Guidance
+</h3>
+
+<p>
+Support for learners at different levels through friendly mentoring and structured lessons.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🌟
+</div>
+
+<h3>
+Values & Discipline
+</h3>
+
+<p>
+We build character alongside academics—respect, responsibility and confidence.
+</p>
+
+</div>
+
+</div>
+
+<div class="about-banner">
+
+<h2>
+Our Promise
+</h2>
+
+<p>
+We strive to create a safe and inspiring learning environment where every student can bloom and achieve their best.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+
+<section class="highlights" id="highlights">
+
+<div class="highlights-inner">
+
+<div class="section-title" style="margin-bottom:34px;">
+
+<h2>Highlights</h2>
+
+<p>Premium education that builds confidence, character and future-ready skills.</p>
+
+</div>
+
+<div class="highlights-grid">
+
+<div class="stat">
+
+<div class="stat-value">1,200+</div>
+
+<div class="stat-label">Students Learning</div>
+
+<div class="stat-sub">Supportive classes & mentoring for every learner.</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-value">60+</div>
+
+<div class="stat-label">Experienced Faculty</div>
+
+<div class="stat-sub">Qualified educators with a passion for teaching.</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-value">10+</div>
+
+<div class="stat-label">Student Clubs</div>
+
+<div class="stat-sub">Sports, arts, science and leadership development.</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-value">98%</div>
+
+<div class="stat-label">Parent Satisfaction</div>
+
+<div class="stat-sub">Strong values, results and transparent communication.</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+
+<section class="section" id="contact">
+
+<div class="section-inner">
+
+<div class="section-title">
+
+<h2>
+Contact Us
+</h2>
+
+<p>
+We welcome parents and students to visit our campus and learn more about our educational programs.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>
+Visit Campus
+</h3>
+
+<p>
+📍 The Flower's School
+</p>
+
+<p>
+Block V and M, Dera Ghazi Khan, Punjab, Pakistan
+</p>
+
+<p>
+⏰ 8:30am-2:00pm, Monday – Friday
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+Get In Touch
+</h3>
+
+<p>
+📞 +92 300 1234567
+</p>
+
+<p>
+📧 info@flowersschool.edu.pk
+</p>
+
+<p>
+🌐 www.flowersschool.edu.pk
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+© 2026 The Flower's School, All Rights Reseverd
+
+</footer>
+
+</body>
+
+</html>
