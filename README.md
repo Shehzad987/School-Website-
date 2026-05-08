@@ -84,7 +84,6 @@ project-folder/
 │
 ├── index.html
 ├── profile logo.jpg
-└── README.md
 ```
 
 ---
