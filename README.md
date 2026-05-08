@@ -1,74 +1,106 @@
-# School-Website-
-# The Flower's School Website 
+#  School Website
+#  The Flower's School Website
 
-A modern and responsive school website designed for The Flower's School located in Dera Ghazi Khan, Pakistan.
-This project was created to provide a clean digital presence for the school with a premium UI, smooth user experience, and informative sections for students and parents.
+A modern and responsive school website designed for **The Flower's School** located in Dera Ghazi Khan, Pakistan.
 
-✨ Features
-Modern glassmorphism inspired UI design
-Fully responsive layout for desktop and mobile devices
-Smooth scrolling navigation
-Beautiful hero section with call-to-action buttons
-Academic, admissions, faculty and contact sections
-Premium gradients, animations and hover effects
-Human-friendly content with realistic school information
-Optimized structure using pure HTML and CSS
-🛠️ Technologies Used
-HTML5
-CSS3
-Google Fonts (Inter)
-Responsive Design
-Flexbox & CSS Grid
-Modern UI/UX Principles
-📚 Website Sections
-Home
-About School
-Academic Programs
-Admissions
-Faculty & Staff
-Highlights & Statistics
-Contact Information
-🎨 Design Highlights
-Navy blue, pink, and red color theme based on school branding
-Smooth animations and modern card layouts
-Glassmorphism effects with soft shadows
-Professional typography and spacing
-Interactive buttons and hover transitions
-📱 Responsive Design
+This project was created to provide a clean digital presence for the school with a premium user interface, smooth animations and informative sections for students and parents.
 
-The website is fully responsive and works smoothly on:
+---
 
-Mobile Phones
-Tablets
-Laptops
-Desktop Screens
-🚀 Live Preview
+## ✨ Features
 
-You can deploy this project easily using:
+- Modern glassmorphism inspired UI
+- Fully responsive design
+- Smooth scrolling navigation
+- Premium hero section
+- Interactive cards and hover effects
+- Academic and admissions sections
+- Faculty and contact information sections
+- Modern gradients and animations
+- Human-written realistic content
+- Mobile-friendly layout
 
-Vercel
-Netlify
-GitHub Pages
-📂 Project Structure
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Google Fonts (Inter)
+- Flexbox
+- CSS Grid
+- Responsive Web Design
+
+---
+
+## 📚 Website Sections
+
+- Home
+- About
+- Academics
+- Admissions
+- Faculty & Staff
+- Highlights
+- Contact
+
+---
+
+## 🎨 Design Highlights
+
+- Navy blue, pink, and red branding theme
+- Smooth animations and transitions
+- Glassmorphism effects
+- Professional typography
+- Modern responsive layout
+- Premium card-based UI
+
+---
+
+## 📱 Responsive Design
+
+The website is optimized for:
+
+- Mobile Devices
+- Tablets
+- Laptops
+- Desktop Screens
+
+---
+
+## 🚀 Deployment
+
+This project can be deployed easily on:
+
+- Vercel
+- Netlify
+- GitHub Pages
+
+---
+
+## 📂 Project Structure
+
+```bash
 project-folder/
 │
 ├── index.html
 ├── profile logo.jpg
 └── README.md
-💡 Purpose of the Project
+```
 
-This project was built to create a professional and visually appealing website for a school that represents:
+---
 
-Quality education
-Modern learning
-Student growth
-School branding and online presence
-👨‍💻 Author
+## 💡 Purpose of the Project
+
+The purpose of this project is to create a professional online presence for a school using modern frontend development and clean UI/UX design principles.
+
+---
+
+## 👨‍💻 Author
 
 Developed and designed by Shehzad Adnan.
 
-GitHub: GitHub Profile
+---
 
-📄 License
+## 📄 License
 
 This project is open-source and available for educational and personal use.
